@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10101c">
+  <title>Diamond Gift - Free Fire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">💎 DIAMOND GIFT</div>
+      <div class="badge">SỰ KIỆN QUÀ TẶNG</div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="diamond">💎</div>
+        <h1>FREE DIAMONDS</h1>
+        <p>Nhận quà trong sự kiện đặc biệt!</p>
+        <div class="reward">💎 999 DIAMONDS 💎</div>
+      </div>
+
+      <section class="card">
+        <h2>🎁 Nhận phần quà của bạn</h2>
+        <p class="description">
+          Nhập UID nhân vật để tham gia sự kiện mô phỏng.
+          Không cần cung cấp mật khẩu tài khoản.
+        </p>
+
+        <form id="giftForm">
+          <label for="uid">UID nhân vật Free Fire</label>
+          <input
+            id="uid"
+            type="text"
+            placeholder="Nhập UID của bạn"
+            maxlength="30"
+            required
+          >
+
+          <button type="submit" id="claimButton">
+            NHẬN KIM CƯƠNG
+          </button>
+        </form>
+
+        <div id="result" class="result" hidden></div>
+
+        <div class="timer-box" id="timerBox" hidden>
+          <p>Thời gian mô phỏng</p>
+          <div id="timer">05:00</div>
+        </div>
+
+        <p class="notice">
+          ⚠️ Đây là bản demo giao diện, không trao kim cương thật
+          và không liên kết với máy chủ Garena.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Fan-made demo · Không phải website chính thức của Garena
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
