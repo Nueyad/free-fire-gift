@@ -186,3 +186,41 @@ footer {
     transform: translateY(-12px);
   }
   }
+.login-panel {
+  margin: 20px 0;
+  padding: 22px;
+  border: 1px solid #514773;
+  border-radius: 16px;
+  background: #151426;
+}
+
+.login-panel h2 {
+  margin-top: 0;
+  color: #70eaff;
+  text-align: center;
+}
+
+.login-panel > p {
+  color: #c5c0d8;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.login-panel label {
+  display: block;
+  margin: 16px 0 8px;
+}
+
+.login-panel input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #514773;
+  border-radius: 10px;
+  background: #121120;
+  color: white;
+}
+
+.login-note {
+  margin-bottom: 0;
+}
