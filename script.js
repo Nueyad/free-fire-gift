@@ -61,3 +61,22 @@ form.addEventListener("submit", function (event) {
   updateTimer();
   countdown = setInterval(updateTimer, 1000);
 });
+const loginForm = document.getElementById("loginForm");
+const loginMessage = document.getElementById("loginMessage");
+
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const uid = document.getElementById("playerUID").value.trim();
+
+  if (!/^\d{1,30}$/.test(uid)) {
+    loginMessage.hidden = false;
+    loginMessage.textContent = "Vui lòng nhập UID chỉ gồm chữ số.";
+    return;
+  }
+
+  loginMessage.hidden = false;
+  loginMessage.textContent =
+    "UID đã được kiểm tra định dạng. Đây là bản demo, " +
+    "chưa xác thực tài khoản hoặc cấp kim cương thật.";
+});
